@@ -18,6 +18,9 @@
 # name
 PRODUCT_RELEASE_NAME := n7100
 
+# OVERLAY_TARGET adds overlay asset source
+OVERLAY_TARGET := pa_xhdpi
+
 # device
 $(call inherit-product-if-exists, device/samsung/n7100/full_n7100.mk)
 
