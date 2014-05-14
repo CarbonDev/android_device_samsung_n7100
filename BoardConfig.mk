@@ -31,6 +31,10 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/n7100/bluetooth
 TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := custom_n7100_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := device/samsung/n7100/rootdir/fstab.smdk4x12
+RECOVERY_FSTAB_VERSION := 2
+
 # Selinux
 BOARD_SEPOLICY_DIRS := \
     device/samsung/n7100/selinux
@@ -54,9 +58,8 @@ TARGET_OTA_ASSERT_DEVICE := t03g,n7100,GT-N7100
 # inherit from the proprietary version
 -include vendor/samsung/n7100/BoardConfigVendor.mk
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/samsung/n7100/rootdir/fstab.smdk4x12
-RECOVERY_FSTAB_VERSION := 2
-
 # Compatibility with pre-kitkat Sensor HALs
 SENSORS_NEED_SETRATE_ON_ENABLE := true
+
+# Camera wrapper
+TARGET_PROVIDES_CAMERA_HAL := true
