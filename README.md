@@ -1,1 +1,0 @@
-**Carbon Device tree for Samsung Galaxy Note 2**
