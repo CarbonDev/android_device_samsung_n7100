@@ -5,12 +5,11 @@ PRODUCT_RELEASE_NAME := n7100
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common Carbon stuff.
-$(call inherit-product, vendor/carbon/config/common_phone.mk)
-$(call inherit-product, vendor/carbon/config/common.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/samsung/n7100/full_n7100.mk)
+
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n7100
