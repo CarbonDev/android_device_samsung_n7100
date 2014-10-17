@@ -17,5 +17,5 @@ PRODUCT_MANUFACTURER := samsung
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="t03gxx-user 4.3 JSS15J N7100XXUENB2 release-keys" \
-    BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.3/JSS15J/N7100XXUENB2:user/release-keys"
+    PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFNI1 release-keys" \
+    BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFNI1:user/release-keys"
